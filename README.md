@@ -1,10 +1,10 @@
-##**Dockerized Stock Data Pipeline with Airflow**##
-**Objective**
+# **Dockerized Stock Data Pipeline with Airflow**
+# **Objective**
 
 This project implements a Dockerized data pipeline using Airflow to automatically fetch, parse, and store stock market data in PostgreSQL. The pipeline fetches stock data hourly from Yahoo Finance (yfinance), handles missing data gracefully, and logs all operations.
 <img width="947" height="399" alt="image" src="https://github.com/user-attachments/assets/d8378c2d-78e7-420b-981f-2edde3281ee6" />
 
-#Features
+# Features
 
 Automatic Data Fetching: Retrieves stock market data on a scheduled basis (hourly).
 
@@ -18,7 +18,7 @@ Environment Variables: Manages credentials securely using .env file.
 
 Scalable & Resilient: Batch inserts, Airflow DAG retries, and max active runs configuration.
 
-Project Structure
+# Project Structure
 stock-pipeline/
 │
 ├─ dags/
@@ -88,7 +88,7 @@ Parsed rows before database insertion.
 
 Logs are accessible in Airflow UI → DAG Run → Task Logs.
 
-#Technical Highlights
+# Technical Highlights
 
 Docker Compose: Starts Postgres, Airflow Scheduler, Webserver, and DB init container.
 
@@ -123,7 +123,7 @@ logs/
 
 Ensure .env is added to .gitignore to avoid committing secrets.
 
-#Evaluation Alignment
+# Evaluation Alignment
 Criteria	Implementation
 Correctness	Data fetched hourly, parsed, and upserted accurately.
 Error Handling	try/except, warnings for missing data, DAG retries configured.
