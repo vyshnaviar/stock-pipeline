@@ -1,0 +1,14 @@
+# Ignore Airflow logs
+airflow/logs/
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Env files
+.env
+
+# Airflow trigger files
+airflow/airflow.cfg
+airflow/webserver_config.py
