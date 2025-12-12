@@ -1,4 +1,4 @@
-#**Dockerized Stock Data Pipeline with Airflow**
+##**Dockerized Stock Data Pipeline with Airflow**##
 **Objective**
 
 This project implements a Dockerized data pipeline using Airflow to automatically fetch, parse, and store stock market data in PostgreSQL. The pipeline fetches stock data hourly from Yahoo Finance (yfinance), handles missing data gracefully, and logs all operations.
